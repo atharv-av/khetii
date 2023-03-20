@@ -194,3 +194,8 @@ form textarea {
 form button {
   width: 40%;
 }
+
+.city-desc{
+  /* font-size: 2rem; */
+  margin: 4px;
+}
