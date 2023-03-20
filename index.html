@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kheti</title>
+  </head>
+  <body>
+    <!-- Home page -->
+    <section id="home">
+      <nav class="fixed z-10 bg-white w-full flex py-3 justify-between px-7 items-center font-sans">
+        <img class="h-16" src="img/logo.png" alt="" />
+        <div class="text-xl space-x-10">
+          <span class="btn"><a href="#hire">Hire Machines</a></span>
+          <span class="btn">Non-residential Services</span>
+          <span class="btn">Crop Advisory</span>
+          <span class="btn">Contact Us</span>
+        </div>
+      </nav>
+
+      <div
+        class="bg-gradient-to-br from-green-300 to-white h-[100vh] flex justify-around font-serif"
+      >
+        <div class="my-auto mx-10">
+          <div class="text-5xl my-auto leading-tight tracking-wider">
+            Agriculture is the most Healthful <br />
+            & most useful
+          </div>
+          <div class="bg-white rounded-xl mt-10 w-32 text-center ml-28 p-2 btn">
+            <a href="about.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <img class="h-[85vh]" src="img/kisan.png" alt="kisan image" />
+      </div>
+    </section>
+
+    <br />
+
+    <!-- Hire Machine page -->
+
+    <section
+      id="hire"
+      class="text-gray-600 body-font relative h-[150vh] w-full bg-gray-50"
+    >
+      <div class="container flex sm:flex-nowrap flex-wrap mx-auto">
+        <div
+          class="lg:w-full md:w-1/2 h-[100%] rounded-lg flex items-end justify-start"
+        >
+          <div class="bg-[#fef4f4] w-2/3 p-4 rounded shadow-lg mr-6 relative">
+            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white text-3xl text-center">HIRE MACHINERY</h3>
+            <h2 class="text-center text-2xl font-bold">Filters</h2>
+            <hr class="h-px my-8 bg-black border-0" />
+            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white text-xl"></h3>
+            <div class="flex">
+              <select
+                id="select"
+                title="select"
+                name="select"
+                class="text-center p-4 mx-auto rounded-md"
+              >
+                <option class="font-bold">Machine Name</option>
+                <option>Rotavators</option>
+                <option>Harrows</option>
+                <option>Ploughs</option>
+                <option>Harvestors</option>
+                <option>Cultivators</option>
+                <option>Balers</option>
+                <option>Trailers</option>
+                <option>Rotary Mulcher</option>
+              </select>
+            </div>
+            <hr class="h-px my-8 bg-black border-0" />
+            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white mt-[-20px] text-xl">PRICE</h3>
+            <div class="flex justify-center">
+              <input type="range" title="range" class="mt-[-10px]" />
+            </div>
+            <div class="flex flex-row items-center justify-center">
+              <input type="text" placeholder="Min Value" class="text-md p-[3px] border-black border-2 w-1/3 mx-4 mt-2">
+              <input type="text" placeholder="Max Value" class="text-md p-[3px] border-black border-2 w-1/3 mx-4 mt-2">
+            </div>
+            <hr class="h-px my-8 bg-black border-0" />
+
+            <h3 class="mb-4 font-semibold text-xl text-gray-900 dark:text-white">
+              BRANDS
+            </h3>
+            <ul
+              class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            >
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    id="vue-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="vue-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Massey Ferguson</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    id="react-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="react-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >John Deere</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    id="angular-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="angular-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Kubota</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    id="laravel-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  >
+                  <label
+                    for="laravel-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Swaraj</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    id="laravel-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  />
+                  <label
+                    for="laravel-checkbox"
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Mahindra</label
+                  >
+                </div>
+              </li>
+            </ul>
+            <hr class="h-px my-8 bg-black border-0" />
+            <h3 class="mb-4 font-semibold text-xl text-gray-900 dark:text-white">FIELD AREA</h3>
+            <input type="text" id="num" class="w-1/2 border-black border-2">
+            <label for="num"></label>
+            <select name="unit" id="unit" class="rounded-md p-[7.2px] m-4">
+              <option class="font-bold">Select</option>
+              <option value="1">hectare</option>
+              <option value="2">sq. km</option>
+              <option value="3">sq. feet</option>
+            </select>
+            
+
+          </div>
+          <div class="text-gray-600 body-font my-auto">
+            <div class="container px-5 py-24 mx-auto"></div>
+            <div class="flex flex-wrap -m-4 translate-y-[-170px]">
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="img/rotavator.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Rotavator
+                  </h2>
+                  <p class="mt-1">₹ 500</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Harrows.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Harrow
+                  </h2>
+                  <p class="mt-1">₹ 400</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Ploughs.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Plough
+                  </h2>
+                  <p class="mt-1">₹ 800</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Harvester-1.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Harvestor
+                  </h2>
+                  <p class="mt-1">₹ 400</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Cultivators.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Cultivator
+                  </h2>
+                  <p class="mt-1">₹ 900</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Balers.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Baler
+                  </h2>
+                  <p class="mt-1">₹ 980</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Trailers.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Trailer
+                  </h2>
+                  <p class="mt-1">₹1200</p>
+                </div>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <a class="block relative h-48 rounded overflow-hidden">
+                  <img
+                    alt="ecommerce"
+                    class="object-cover object-center w-full h-full block"
+                    src="https://www.fieldking.com/images/home/Rotary_Mulcher.jpg"
+                  />
+                </a>
+                <div class="mt-4">
+                  <h2 class="text-gray-900 title-font text-lg font-medium">
+                    Rotary Mulcher
+                  </h2>
+                  <p class="mt-1">₹1840</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Non-residential Services -->
+    <section class="mt-10">
+      <h1 class="text-5xl text-green-500 text-center">
+        Non-residential Service
+      </h1>
+      <section class="overflow-hidden mt-5 text-neutral-700">
+        <div class="container mx-auto z py-2 lg:px-32 lg:pt-12">
+          <div class="-m-1 flex flex-wrap md:-m-2">
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/ajmer.jpg"
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/jaipur.jpg"
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/jodhpur.jpg"
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/udaipur.jpg"
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/montabu.jpg"
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="./img/kota.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section> <br>
+    <section id="service">
+      <div class="title-text">
+          <p class="text-center text-5xl font-bold mb-8 mt-[-40px]">Crop Advisory</p>
+          <p class="text-center text-3xl font-semibold mb-6">MENTORS</p>
+      </div>
+      <div class="service-box">
+          <div class="single-service">
+              <img class="h-80" src="./img/far1.jpg" alt="">
+              <div class="overlay"></div>
+              <div class="service-desc">
+                  <h3>Hair Styling</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate nobis sequi voluptatibus ad!</p>
+              </div>
+          </div>
+          <div class="single-service">
+              <img class="h-80" src="img/far2.jpg" alt="">
+              <div class="overlay"></div>
+              <div class="service-desc">
+                  <h3>Beard Trim</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate nobis sequi voluptatibus ad!</p>
+              </div>
+          </div>
+          <div class="single-service">
+              <img class="h-80" src="img/far3.jpg" alt="">
+              <div class="overlay"></div>
+              <div class="service-desc">
+                  <h3>Hair Cut</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate nobis sequi voluptatibus ad!</p>
+              </div>
+          </div>
+          <div class="single-service">
+              <img class="h-80" src="img/far4.jpg" alt="">
+              <div class="overlay"></div>
+              <div class="service-desc">
+                  <h3>Dry Shampoo</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate nobis sequi voluptatibus ad!</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="flex justify-center items-center mt-16">
+    <form class="" onsubmit="sendEmail(); reset(); return false;">
+      <h3 class="text-3xl font-bold">Contact Us</h3>
+      <input type="text" id="name" name="name" title="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" title="email" placeholder="Email Id" required>
+      <input type="text" id="phone" name="phone" title="phone" placeholder="Phone Number" required>
+      <textarea name="message" id="message" rows="4" placeholder="How can we help you?"></textarea>
+      <button type="submit" class="btn" onsubmit="sendEmail()">Send</button>
+    </form>
+  </section>
+  <footer class="bg-green-300 flex justify-center items-center mt-5 py-5">
+    <span class="text-xl"> Copyright &#9426 GigaDevs
+    </span>
+  </footer>
+  </body>
+</html>
